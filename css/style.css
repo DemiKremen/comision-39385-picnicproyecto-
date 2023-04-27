@@ -1,0 +1,63 @@
+header nav{
+    background-color: #E5E5CB;
+}
+
+footer{
+    margin-top: 2rem;
+}
+
+main{
+    background-color: white;
+}
+
+h1{
+    color: red;
+    font-weight: bolder;
+    font-family: poppins;
+}
+h2{
+    color: #3C2A21;
+}
+
+h4{
+    color: aliceblue;
+    font-size: 48px;
+    text-shadow: grey
+}
+
+h6{
+    font-weight: bold;
+    color: #3C2A21
+}
+
+p{
+    color: #3C2A21;
+}
+
+.centrado{
+    text-align: center;
+}
+
+.cards-container {
+    margin-top: 1rem;
+    margin-block-end: 5rem;
+}
+
+.imgfoot{
+    margin-top: 1.5rem;
+}
+
+.carruespacio{
+    margin-top: 1rem;
+    margin-block-end: 5rem;
+}
+
+.nav-item a:hover{
+    color: #3C2A21;
+}
+
+.nav-item a:active{
+    color: rgb(0, 0, 0);
+    text-shadow: 2px 4px 5px rebeccapurple;
+}
+
