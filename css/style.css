@@ -58,6 +58,111 @@ p{
 
 .nav-item a:active{
     color: rgb(0, 0, 0);
-    text-shadow: 2px 4px 5px rebeccapurple;
+    text-shadow: 2px 4px 5px rgb(255, 255, 255);
 }
 
+
+
+
+/*PAGINA DESTACADOS USANDO GRIDS*/
+.fondomaindest{    
+    background-color: rgb(254, 187, 187);
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    
+}  
+  
+.card {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}  
+
+.card-1 {
+    background-color: #FF1493;
+    text-align: center;
+    }
+.card-2 {
+    background-color: #00FFFF;
+    text-align: center;
+    }
+.card-3 {
+    background-color: #66FF00;
+    text-align: center;
+    }
+.card-4 {
+    background-color: #FF9933;
+    text-align: center;
+    }
+.card-5 {
+    background-color: #FFFF00;
+    text-align: center;
+    }
+.card-6 {
+    background-color: #FFD700;
+    text-align: center;
+    }
+.card-7 {
+    background-color: #00CED1;
+    text-align: center;
+    }
+.card-8 {
+    background-color: #00FFFF;
+    text-align: center;
+    }
+.card-9 {
+    background-color: #FF00CC;
+    text-align: center;
+    }
+
+@media (min-width: 1441px) and (max-width: 1920px) { /* Pongo un maximo asi no se me rompe */
+    .cards-container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 1440px) {
+    .cards-container {
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+    }
+}
+
+@media (max-width: 1024px) {
+    .cards-container {
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+}
+  
+@media (max-width: 768px) { 
+    .cards-container {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 15px;
+        justify-items: center;
+    }
+}
+
+@media (max-width: 425px) { 
+    .cards-container {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 15px;
+        justify-items: center;
+    }
+}  
+@media (max-width: 320px) { 
+    .cards-container {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 10px;
+        justify-items: center;
+    }
+}
