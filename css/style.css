@@ -81,112 +81,274 @@ button {
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25); 
 } 
 
+.margin-footer{
+    margin-top: 80rem;
+}
 
 /*PAGINA DESTACADOS USANDO GRIDS*/
 
-.container {
+.container{
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, auto);
-    grid-gap: 1rem;
+    box-sizing: border-box;
 }
-  
-.grid-container {
-    background-color: #f1f1f1;
+
+.grid-container{
+    margin-top: 2rem;
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(6, 1fr);
+    width: 100%;
+    height: 125rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 25rem 4rem 18rem 40rem 4rem;
     grid-template-areas: 
-      "titulo titulo titulo imagen imagen imagen"
-      "titulo titulo titulo imagen imagen imagen"
-      "titulo titulo titulo imagen imagen imagen"
-      "uno uno dos dos tres tres"
-      "uno uno dos dos tres tres";
-    gap: 1rem;
+    "titulo portada portada"
+    "pregunta pregunta pregunta"
+    "imgdos imgtres imgcuatro"
+    "carduno carddos cardtres"
+    "cierre cierre cierre"
+    ;
+    background-color: rgb(253, 253, 253);
+    gap: 2rem;
 }
-  
-.titulo-main {
-    grid-area: titulo;
+
+.image-main{
+    grid-area: portada;
+    display: grid;
+    justify-self: end;
+    align-self: end;    
 }
-  
-.image-main {
-    grid-area: imagen;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 100%;
-    max-height: 500px;
+.image-main img{
+    border-radius: 1rem;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
     overflow: hidden;
 }
-  
-.image-main img {
+
+.titulo-main{
+    grid-area: titulo;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 1rem;
+    margin-top: 4rem;
+}
+
+.pregunta-main{
+    display: grid;
+    width: 100%;
+    background-color: #3C2A21;
+    grid-area: pregunta;
+    padding: 2rem;
+    justify-self: left;
+    align-self: center;    
+    border-radius: 1rem;
+}
+.pregunta-main h3{
+    color: white;
+    text-align: center;
+}
+
+.image-maindos{
+    grid-area: imgdos;
+    display: grid;
+    height: auto;
+    justify-self: start;
+    align-self: start;
+}
+.image-maindos img{
     max-width: 100%;
-    max-height: 100%;
-    object-fit: contain;
+    border-radius: 1rem;
+}
+
+.image-maintres{
+    grid-area: imgtres;
+    display: grid;
+    height: auto;
+    justify-self: start;
+    align-self: start;
+}
+.image-maintres img{
+    max-width: 100%;
+    border-radius: 1rem;
+}
+
+.image-maincuatro{
+    grid-area: imgcuatro;
+    display: grid;
+    height: auto;
+    justify-self: start;
+    align-self: start;
+}
+.image-maincuatro img{
+    max-width: 100%;
+    border-radius: 1rem;
+}
+
+.carduno-main{
+    grid-area: carduno;
+    display: grid;
+    height: auto;
+    justify-self: start;
+    align-self: start;
+}
+.carduno-main img{
+    max-width: 100%;
+    border-radius: 1rem;
+}
+.carddos-main{
+    grid-area: carddos;
+    display: grid;
+    height: auto;
+    justify-self: start;
+    align-self: start;
+}
+.carddos-main img{
+    max-width: 100%;
+    border-radius: 1rem;
+}
+.cardtres-main{
+    grid-area: cardtres;
+    display: grid;
+    height: auto;
+    justify-self: start;
+    align-self: start;
+}
+.cardtres-main img{
+    max-width: 100%;
+    border-radius: 1rem;
+}
+
+.cierre-main{
+    display: grid;
+    width: 100%;
+    background-color: #e49e07;
+    grid-area: cierre;
+    padding: 2rem;
+    justify-self: left;
+    align-self: center;    
+    border-radius: 1rem;
+}
+.cierre-main h3{
+    color: white;
+    text-align: center;
 }
 
 
 
-
-@media screen and (max-width: 1024px) {
-    .grid-container {
+@media (max-width: 1024px){
+    .grid-container{
+        margin: 0rem;
+        display: none;
         display: grid;
-        grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: repeat(12, 1fr);
+        width: 100%;
+        height: 100rem;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto auto auto auto;
         grid-template-areas: 
-            "titulo titulo titulo imagen imagen imagen"
-            "titulo titulo titulo imagen imagen imagen"
-            "titulo titulo titulo imagen imagen imagen"
-    }
-    .titulo-main {    
-        margin-top: 2rem;    
-        text-align: left;
-    }
-}
-
-
-@media screen and (max-width: 768px) {
-    .grid-container {
-        grid-template-rows: auto;
-        grid-template-columns: 1fr;
-        grid-template-areas:
-            "titulo"
-            "imagen"
-            ;
-    }  
-    .titulo-main {
-        margin-top: 0rem;
-        text-align: center;
-    }
-  
-    .image-main {
-        max-height: 300px;
-    }
-}
-
-
-@media screen and (max-width: 425px) {
-    .grid-container {
-        grid-template-rows: auto;
-        grid-template-columns: 1fr;
-        grid-template-areas:
         "titulo"
-        "imagen"
+        "portada"
+        "pregunta"
+        "imgdos"
+        "carduno"
+        "cierre"
         ;
+        background-color: rgb(253, 253, 253);
+        gap: 2rem;
+    }    
+
+    .titulo-main{
+        grid-area: titulo;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 1rem;
+        margin-top: 4rem;
     }
-    .titulo-main {
-        font-size: 2rem;
+
+    .image-maindos{
+        grid-area: imgdos;
+        display: grid;
+        height: auto;
+        justify-self: center;
+        align-self: center;
+    }  
+
+    .image-maintres{
+        display: none;
     }
+
+    .image-maincuatro{
+        display: none;
+    }
+    
+    .carddos-main{
+        display: none
+    }
+
+    .carduno-main{
+        grid-area: carduno;
+        display: grid;
+        height: auto;
+        justify-self: center;
+        align-self: center;
+    }
+
+    .cardtres-main{
+        display: none
+    } 
 }
 
+@media (max-width: 768px){
 
-@media screen and (max-width: 320px) {
-    .titulo-main {
-    font-size: 1.5rem;
-}
-  
-    .btn-primary {
-        font-size: 1rem;
+    .grid-container{
+        margin-top: 1rem;
+        display: grid;
+        width: 100%;
+        height: 100vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto auto auto auto;
+        grid-template-areas: 
+        "titulo"
+        "portada"
+        "pregunta"
+        "imgdos"
+        "carduno"
+        "cierre"
+        ;
+        background-color: rgb(253, 253, 253);
+        gap: 2rem;
+    }    
+
+    .titulo-main{
+        grid-area: titulo;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 1rem;
+        margin-top: 4rem;
     }
-}
 
+    .image-maindos{
+        grid-area: imgdos;
+        display: grid;
+        height: auto;
+        justify-self: center;
+        align-self: center;
+    }
+
+    .image-maintres{
+        display: none;
+    }
+
+    .image-maincuatro{
+        display: none;
+    }
+
+    .carddos-main{
+        display: none
+    }
+
+    .cardtres-main{
+        display: none
+    }    
+}
