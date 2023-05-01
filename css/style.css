@@ -65,6 +65,9 @@ p{
     background: linear-gradient(to right, #F8E2D7, #B39BC4);
 }  
 
+.marginsuhi{
+    margin-top: 2rem;
+}
 
 button {
     background-color: #e49e07; 
@@ -351,4 +354,401 @@ button {
     .cardtres-main{
         display: none
     }    
+}
+
+/*PAGINA NOSOTROS USANDO GRIDS*/
+
+.dest-container{
+    display: grid;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+.grid-dest{
+    display: grid;
+    max-width: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+    ". nosotros nosotros nosotros ."
+    "verde verde verde verde verde"
+    ". frase huevo huevo huevo"
+    "fin fin fin team team"
+    ;
+    background-color: rgb(253, 253, 253);
+    gap: 1rem;
+}
+
+.titulo-dest{
+    display: grid;
+    width: 100%;
+    grid-area: nosotros;
+    padding: 2rem;
+    justify-self: center;
+    align-self: center;    
+    text-align: center;
+}
+
+.titulo-dest h1{
+    color: #3C2A21;
+}
+
+.image-verde{
+    grid-area: verde;
+    display: grid;
+    height: auto;
+    justify-self: center;
+    align-self: top;    
+}
+
+.image-verde img{
+    max-width: 100%;
+    height: auto;
+}
+
+.frase-dest{
+    display: grid;
+    width: 100%;
+    background-color:#3C2A21;
+    grid-area: frase;
+    padding: 2rem;
+    justify-self: top;
+    align-self: top;    
+}
+.frase-dest h3{
+    color: white;
+    text-align: right;
+}
+
+.image-destdos{
+    grid-area: huevo;
+    display: grid;
+    height: auto;
+    justify-self: start;
+    align-self: start;
+}
+.image-destdos img{
+    max-width: 100%;
+    height: auto;
+}
+
+.team-dest{
+    display: grid;
+    width: 100%;
+    grid-area: team;
+    justify-self: left;
+    align-self: left; 
+    text-align: left;   
+    padding: 1rem;
+}
+.team-dest h1{
+    color: black;    
+}
+
+
+.image-fin{
+    grid-area: fin;
+    display: grid;
+    height: auto;
+    justify-self: end;
+    align-self: end;
+}
+.image-fins img{
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 425px){
+    .grid-dest{
+        display: grid;
+        max-width: 100%;
+        height: auto;
+        grid-template-columns: 425px;
+        grid-template-rows: auto auto auto auto auto auto;
+        grid-template-areas: 
+        "nosotros"
+        "verde"
+        "frase"
+        "huevo"
+        "team"
+        "fin"
+        ;
+        background-color: rgb(253, 253, 253);
+    }
+
+    .titulo-dest{
+        display: grid;
+        width: 100%;
+        grid-area: nosotros;
+        justify-self: center;
+        align-self: center;    
+        text-align: center;
+    }
+    
+    .titulo-dest h1{
+        color: #3C2A21;
+    }
+    
+    .image-verde{
+        grid-area: verde;
+        display: grid;
+        height: auto;
+        justify-self: center;
+        align-self: center;    
+    }
+    
+    .image-verde img{
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .frase-dest{
+        display: grid;
+        width: 100%;
+        background-color:#3C2A21;
+        grid-area: frase;
+        justify-self: center;
+        align-self: center;    
+    }
+    .frase-dest h3{
+        color: white;
+        text-align: center;
+    }
+    
+    .image-destdos{
+        grid-area: huevo;
+        display: grid;
+        height: auto;
+        justify-self: center;
+        align-self: center;
+    }
+    .image-destdos img{
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .team-dest{
+        display: grid;
+        width: 100%;
+        grid-area: team;
+        justify-self: center;
+        align-self: center; 
+        text-align: center;   
+    }
+    .team-dest h1{
+        color: black;    
+    }   
+    
+    .image-fin{
+    display: none;
+    }
+
+}
+
+@media (max-width: 375px){
+    .grid-dest{
+        display: grid;
+        max-width: 100%;
+        height: auto;
+        grid-template-columns: 375px;
+        grid-template-rows: auto auto auto auto auto auto;
+        grid-template-areas: 
+        "nosotros"
+        "verde"
+        "frase"
+        "huevo"
+        "team"
+        "fin"
+        ;
+        background-color: rgb(253, 253, 253);
+    }
+
+    .titulo-dest{
+        display: grid;
+        width: 100%;
+        grid-area: nosotros;
+        justify-self: center;
+        align-self: center;    
+        text-align: center;
+    }
+    
+    .titulo-dest h1{
+        color: #3C2A21;
+    }
+    
+    .image-verde{
+        grid-area: verde;
+        display: grid;
+        height: auto;
+        justify-self: center;
+        align-self: center;    
+    }
+    
+    .image-verde img{
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .frase-dest{
+        display: grid;
+        width: 100%;
+        background-color:#3C2A21;
+        grid-area: frase;
+        justify-self: center;
+        align-self: center;    
+    }
+    .frase-dest h3{
+        color: white;
+        text-align: center;
+    }
+    
+    .image-destdos{
+        grid-area: huevo;
+        display: grid;
+        height: auto;
+        justify-self: center;
+        align-self: center;
+    }
+    .image-destdos img{
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .team-dest{
+        display: grid;
+        width: 100%;
+        grid-area: team;
+        justify-self: center;
+        align-self: center; 
+        text-align: center;   
+    }
+    .team-dest h1{
+        color: black;    
+    }   
+    
+    .image-fin{
+    display: none;
+    }
+
+}
+
+@media (max-width: 320px){
+    .grid-dest{
+        display: grid;
+        max-width: 100%;
+        height: auto;
+        grid-template-columns: 320px;
+        grid-template-rows: auto auto auto auto auto auto;
+        grid-template-areas: 
+        "nosotros"
+        "verde"
+        "frase"
+        "huevo"
+        "team"
+        "fin"
+        ;
+        background-color: rgb(253, 253, 253);
+    }
+
+    .titulo-dest{
+        display: grid;
+        width: 100%;
+        grid-area: nosotros;
+        justify-self: center;
+        align-self: center;    
+        text-align: center;
+    }
+    
+    .titulo-dest h1{
+        color: #3C2A21;
+    }
+    
+    .image-verde{
+        grid-area: verde;
+        display: grid;
+        height: auto;
+        justify-self: center;
+        align-self: center;    
+    }
+    
+    .image-verde img{
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .frase-dest{
+        display: grid;
+        width: 100%;
+        background-color:#3C2A21;
+        grid-area: frase;
+        justify-self: center;
+        align-self: center;    
+    }
+    .frase-dest h3{
+        color: white;
+        text-align: center;
+    }
+    
+    .image-destdos{
+        grid-area: huevo;
+        display: grid;
+        height: auto;
+        justify-self: center;
+        align-self: center;
+    }
+    .image-destdos img{
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .team-dest{
+        display: grid;
+        width: 100%;
+        grid-area: team;
+        justify-self: center;
+        align-self: center; 
+        text-align: center;   
+    }
+    .team-dest h1{
+        color: black;    
+    }   
+    
+    .image-fin{
+    display: none;
+    }
+
+}
+
+
+/*Arreglo footer*/
+@media (max-width: 1440px){
+    .margin-footer{
+        margin-top: 0px
+    }
+}
+
+@media (max-width: 1024px){
+    .margin-footer{
+        margin-top: 1300px
+    }
+}
+
+@media (max-width: 768px){
+    .margin-footer{
+        margin-top: 2000px;
+    }
+}
+
+@media (max-width: 475px){
+    .margin-footer{
+        margin-top: 1000px;
+    }
+}
+
+@media (max-width: 320px){
+    .margin-footer{
+        margin-top: 800px;
+    }
 }
