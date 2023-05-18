@@ -1,0 +1,105 @@
+@media (max-width: 320px){
+    .grid-container{
+        display: grid;        
+        height: 95rem;
+        grid-template-columns: 1fr;
+        grid-template-rows: 220px 170px 150px 200px 500px 150px;
+        grid-template-areas: 
+        "titulo"
+        "portada"
+        "pregunta"
+        "imgdos"
+        "carduno"
+        "cierre"
+        ;                         
+    }    
+
+    .titulo-main{        
+        border-radius: 0.2rem;
+        grid-area: titulo;
+        display: flex;
+        flex-direction: column;
+        text-align: center;        
+        align-self: flex-end; 
+    }
+
+    .image-main{
+        grid-area: portada;
+        display: grid;
+        justify-self: center;
+        align-self: start;    
+    }
+    .image-main img{
+        border-radius: 0.2rem;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .image-maindos{        
+        grid-area: imgdos;
+        display: grid;        
+        justify-self: center;
+        align-self: top;
+    }  
+    .image-maindos img{
+        border-radius: 0.2rem;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .image-maintres{
+        display: none;
+    }
+
+    .image-maincuatro{
+        display: none;
+    }
+    
+    .carddos-main{
+        display: none
+    }
+
+    .pregunta-main{
+        display: grid;    
+        border-radius: 0.2rem;
+    }
+
+    .carduno-main{
+        border-radius: 0.2rem;
+        grid-area: carduno;
+        display: grid;
+        height: auto;
+        justify-self: center;
+        align-self: center;
+    }
+
+    .carduno-main img{
+        max-width: 100%;
+        border-radius: 0.2rem;
+    }
+    .carduno-main h5{
+        margin-top: 1rem;
+        text-align: center;
+        justify-self: center;
+        align-self: center;
+    }
+    .carduno-main p{
+        text-align: center;
+        justify-self: center;
+        align-self: center;
+    }
+
+    .cardtres-main{
+        display: none
+    } 
+    
+    .cierre-main{
+        display: grid;    
+        border-radius: 0.2rem;
+    }
+    
+}

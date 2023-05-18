@@ -1,0 +1,11 @@
+header nav {
+	background-color: $primary-color;
+}
+
+.nav-item a:hover {
+	color: #3C2A21;
+}
+.nav-item a:active {
+	color: rgb(0, 0, 0);
+	text-shadow: 2px 4px 5px rebeccapurple;
+}

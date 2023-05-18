@@ -1,0 +1,25 @@
+// _typography.scss
+
+h1 {
+	color: rgb(192, 255, 4);
+	font-weight: bolder;
+	font-family: poppins;
+}
+h2 {
+	color: #3C2A21;
+}
+h4 {
+	color: aliceblue;
+	font-size: 2rem;
+	text-shadow: grey;
+}
+h6 {
+	font-weight: bold;
+	color: #3C2A21;
+}
+p {
+	color: #3C2A21;
+}
+.centrado {
+	text-align: center;
+}

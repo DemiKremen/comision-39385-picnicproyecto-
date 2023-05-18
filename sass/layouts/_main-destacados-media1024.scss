@@ -1,0 +1,89 @@
+@media (max-width: 1024px){
+    .grid-container{
+        display: grid;        
+        height: 200rem;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto auto auto auto;
+        grid-template-areas: 
+        "titulo"
+        "portada"
+        "pregunta"
+        "imgdos"
+        "carduno"
+        "cierre"
+        ;               
+        gap: 0.5rem;  
+    }    
+
+    .titulo-main{
+        grid-area: titulo;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 0rem;        
+        align-self: flex-end; 
+    }
+
+    .image-main{
+        grid-area: portada;
+        display: grid;
+        justify-self: center;
+        align-self: start;    
+    }
+    .image-main img{
+        border-radius: 1rem;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .image-maindos{        
+        grid-area: imgdos;
+        display: grid;        
+        justify-self: center;
+        align-self: top;
+    }  
+    .image-maindos img{
+        border-radius: 1rem;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .image-maintres{
+        display: none;
+    }
+
+    .image-maincuatro{
+        display: none;
+    }
+    
+    .carddos-main{
+        display: none
+    }
+
+    .carduno-main{
+        grid-area: carduno;
+        display: grid;
+        height: auto;
+        justify-self: center;
+        align-self: center;
+    }
+    .carduno-main h5{
+        margin-top: 1rem;
+        text-align: center;
+        justify-self: center;
+        align-self: center;
+    }
+    .carduno-main p{
+        text-align: center;
+        justify-self: center;
+        align-self: center;
+    }
+
+    .cardtres-main{
+        display: none
+    } 
+}

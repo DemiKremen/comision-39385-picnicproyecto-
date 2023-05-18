@@ -1,0 +1,44 @@
+// _variables.scss
+
+$primary-color: #959595;
+$secondary-color: #e4e4e4;
+$font-size: 16px;
+
+header nav {
+	background-color: $primary-color;
+}
+footer {
+    background-color: $primary-color;
+	margin-top: 1rem;
+}
+main {
+	background-color: $secondary-color;
+	animation: color-change-4x 6s infinite;
+	background-color: var(--secondary-color);
+}
+
+:root {
+	--secondary-color: transparent;
+	animation: color-change-4x 6s infinite;
+}
+
+@keyframes color-change-4x {
+	0% {
+	  background: #FFFFFF;
+	}
+	10% {
+	  background: #cbcbcb;
+	  }
+	40% {
+	  background: #a3a3a3;
+	  }
+	70% {
+	  background: #858585;
+	}
+	80% {
+		background: #e3e3e3;
+	  }
+	100% {
+		background: #faf3f3;
+	}
+}
