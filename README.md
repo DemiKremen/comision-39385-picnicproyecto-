@@ -6,6 +6,6 @@
 
 ## Tecnologías utilizadas
 >La página web de Picnic ha sido desarrollada utilizando las siguientes tecnologías:
-- HTML: Utilizamos HTML para la estructura y el marcado de la página web.
-- CSS: Empleamos CSS para el diseño y la presentación de la página.
-- Sass: Hemos utilizado Sass como un preprocesador de CSS.
+- HTML: HTML para la estructura y el marcado de la página web.
+- CSS: CSS para el diseño y la presentación de la página.
+- Sass: Utilice Sass como un preprocesador de CSS.
