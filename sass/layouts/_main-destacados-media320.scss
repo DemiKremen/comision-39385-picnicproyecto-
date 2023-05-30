@@ -1,6 +1,6 @@
 @media (max-width: 320px){
     .grid-container{
-        display: grid;        
+        @include grid (center, center);                      
         height: 95rem;
         grid-template-columns: 1fr;
         grid-template-rows: 220px 170px 150px 200px 500px 150px;
@@ -16,18 +16,12 @@
 
     .titulo-main{        
         border-radius: 0.2rem;
-        grid-area: titulo;
-        display: flex;
-        flex-direction: column;
-        text-align: center;        
-        align-self: flex-end; 
+        grid-area: titulo; 
     }
 
     .image-main{
         grid-area: portada;
-        display: grid;
-        justify-self: center;
-        align-self: start;    
+        display: grid;   
     }
     .image-main img{
         border-radius: 0.2rem;
@@ -39,9 +33,8 @@
 
     .image-maindos{        
         grid-area: imgdos;
-        display: grid;        
-        justify-self: center;
-        align-self: top;
+        display: grid;      
+
     }  
     .image-maindos img{
         border-radius: 0.2rem;
@@ -73,8 +66,6 @@
         grid-area: carduno;
         display: grid;
         height: auto;
-        justify-self: center;
-        align-self: center;
     }
 
     .carduno-main img{
@@ -83,14 +74,10 @@
     }
     .carduno-main h5{
         margin-top: 1rem;
-        text-align: center;
-        justify-self: center;
-        align-self: center;
+;
     }
     .carduno-main p{
-        text-align: center;
-        justify-self: center;
-        align-self: center;
+        margin-top: 0rem;
     }
 
     .cardtres-main{

@@ -1,25 +1,36 @@
 // _typography.scss
 
+.poppins-header{
+	font-family: 'Poppins', sans-serif;
+}
+
 h1 {
 	color: rgb(192, 255, 4);
 	font-weight: bolder;
-	font-family: poppins;
+	font-family: 'Roboto', sans-serif;
 }
 h2 {
 	color: #3C2A21;
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
 }
 h4 {
 	color: aliceblue;
 	font-size: 2rem;
 	text-shadow: grey;
+	font-family: 'Roboto', sans-serif;
 }
 h6 {
 	font-weight: bold;
 	color: #3C2A21;
+	font-family: 'Roboto', sans-serif;
 }
 p {
 	color: #3C2A21;
+	font-family: 'Roboto', sans-serif;
 }
 .centrado {
 	text-align: center;
+	font-family: 'Roboto', sans-serif;
 }
+

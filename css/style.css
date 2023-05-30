@@ -48,33 +48,43 @@ body {
   font-family: Arial, sans-serif;
 }
 
+.poppins-header {
+  font-family: "Poppins", sans-serif;
+}
+
 h1 {
   color: rgb(192, 255, 4);
   font-weight: bolder;
-  font-family: poppins;
+  font-family: "Roboto", sans-serif;
 }
 
 h2 {
   color: #3C2A21;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
 }
 
 h4 {
   color: aliceblue;
   font-size: 2rem;
   text-shadow: grey;
+  font-family: "Roboto", sans-serif;
 }
 
 h6 {
   font-weight: bold;
   color: #3C2A21;
+  font-family: "Roboto", sans-serif;
 }
 
 p {
   color: #3C2A21;
+  font-family: "Roboto", sans-serif;
 }
 
 .centrado {
   text-align: center;
+  font-family: "Roboto", sans-serif;
 }
 
 button {
@@ -400,6 +410,9 @@ body {
 @media (max-width: 768px) {
   .grid-container {
     display: grid;
+    justify-content: center;
+    align-items: center;
+    display: grid;
     height: 155rem;
     grid-template-columns: 1fr;
     grid-template-rows: 200px 400px 150px 475px 1000px 150px;
@@ -408,16 +421,10 @@ body {
   .titulo-main {
     grid-area: titulo;
     display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin-top: 0rem;
-    align-self: flex-end;
   }
   .image-main {
     grid-area: portada;
     display: grid;
-    justify-self: center;
-    align-self: start;
   }
   .image-main img {
     border-radius: 1rem;
@@ -429,8 +436,6 @@ body {
   .image-maindos {
     grid-area: imgdos;
     display: grid;
-    justify-self: center;
-    align-self: top;
   }
   .image-maindos img {
     border-radius: 1rem;
@@ -452,19 +457,12 @@ body {
     grid-area: carduno;
     display: grid;
     height: auto;
-    justify-self: center;
-    align-self: center;
   }
   .carduno-main h5 {
     margin-top: 1rem;
-    text-align: center;
-    justify-self: center;
-    align-self: center;
   }
   .carduno-main p {
-    text-align: center;
-    justify-self: center;
-    align-self: center;
+    margin-top: 1rem;
   }
   .cardtres-main {
     display: none;
@@ -473,6 +471,9 @@ body {
 @media (max-width: 425px) {
   .grid-container {
     display: grid;
+    justify-content: center;
+    align-items: center;
+    display: grid;
     height: 110rem;
     grid-template-columns: 1fr;
     grid-template-rows: 220px 230px 150px 260px 650px 150px;
@@ -480,16 +481,10 @@ body {
   }
   .titulo-main {
     grid-area: titulo;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-self: flex-end;
   }
   .image-main {
     grid-area: portada;
     display: grid;
-    justify-self: center;
-    align-self: start;
   }
   .image-main img {
     border-radius: 1rem;
@@ -501,8 +496,6 @@ body {
   .image-maindos {
     grid-area: imgdos;
     display: grid;
-    justify-self: center;
-    align-self: top;
   }
   .image-maindos img {
     border-radius: 1rem;
@@ -524,19 +517,12 @@ body {
     grid-area: carduno;
     display: grid;
     height: auto;
-    justify-self: center;
-    align-self: center;
   }
   .carduno-main h5 {
     margin-top: 1rem;
-    text-align: center;
-    justify-self: center;
-    align-self: center;
   }
   .carduno-main p {
-    text-align: center;
-    justify-self: center;
-    align-self: center;
+    margin-top: 0rem;
   }
   .cardtres-main {
     display: none;
@@ -545,6 +531,8 @@ body {
 @media (max-width: 320px) {
   .grid-container {
     display: grid;
+    justify-content: center;
+    align-items: center;
     height: 95rem;
     grid-template-columns: 1fr;
     grid-template-rows: 220px 170px 150px 200px 500px 150px;
@@ -553,16 +541,10 @@ body {
   .titulo-main {
     border-radius: 0.2rem;
     grid-area: titulo;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-self: flex-end;
   }
   .image-main {
     grid-area: portada;
     display: grid;
-    justify-self: center;
-    align-self: start;
   }
   .image-main img {
     border-radius: 0.2rem;
@@ -574,8 +556,6 @@ body {
   .image-maindos {
     grid-area: imgdos;
     display: grid;
-    justify-self: center;
-    align-self: top;
   }
   .image-maindos img {
     border-radius: 0.2rem;
@@ -602,8 +582,6 @@ body {
     grid-area: carduno;
     display: grid;
     height: auto;
-    justify-self: center;
-    align-self: center;
   }
   .carduno-main img {
     max-width: 100%;
@@ -611,14 +589,9 @@ body {
   }
   .carduno-main h5 {
     margin-top: 1rem;
-    text-align: center;
-    justify-self: center;
-    align-self: center;
   }
   .carduno-main p {
-    text-align: center;
-    justify-self: center;
-    align-self: center;
+    margin-top: 0rem;
   }
   .cardtres-main {
     display: none;
@@ -942,6 +915,23 @@ body {
 
 .imgfoot {
   margin-top: 1.5rem;
+}
+
+@media (min-width: 1024px) {
+  .col-md-6 {
+    display: flex;
+    flex-direction: column;
+  }
+  .col-md-6 img {
+    order: 2;
+  }
+}
+.fondomain {
+  max-width: 100%;
+}
+
+.no-horizontal-scroll {
+  overflow-x: hidden;
 }
 
 /*# sourceMappingURL=style.css.map */

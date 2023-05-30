@@ -2,6 +2,8 @@
 @import "base/reset";
 @import "base/typhography";
 
+@import "./utilities/mixins";
+
 @import "components/button";
 @import "components/boostrap";
 
@@ -14,5 +16,8 @@
 @import "layouts/main-destacados-media320";
 @import "layouts/_main-nosotros";
 @import "layouts/footer";
+@import "./layouts/main-serv";
+
+@import "layouts/main-lanzamientos";
 
 

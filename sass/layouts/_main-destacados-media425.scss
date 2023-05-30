@@ -1,5 +1,6 @@
 @media (max-width: 425px){
     .grid-container{
+        @include grid (center, center); 
         display: grid;        
         height: 110rem;
         grid-template-columns: 1fr;
@@ -15,18 +16,12 @@
     }    
 
     .titulo-main{        
-        grid-area: titulo;
-        display: flex;
-        flex-direction: column;
-        text-align: center;        
-        align-self: flex-end; 
+        grid-area: titulo; 
     }
 
     .image-main{
         grid-area: portada;
-        display: grid;
-        justify-self: center;
-        align-self: start;    
+        display: grid;   
     }
     .image-main img{
         border-radius: 1rem;
@@ -39,8 +34,6 @@
     .image-maindos{        
         grid-area: imgdos;
         display: grid;        
-        justify-self: center;
-        align-self: top;
     }  
     .image-maindos img{
         border-radius: 1rem;
@@ -66,19 +59,12 @@
         grid-area: carduno;
         display: grid;
         height: auto;
-        justify-self: center;
-        align-self: center;
     }
     .carduno-main h5{
-        margin-top: 1rem;
-        text-align: center;
-        justify-self: center;
-        align-self: center;
+        margin-top: 1rem; 
     }
     .carduno-main p{
-        text-align: center;
-        justify-self: center;
-        align-self: center;
+        margin-top: 0rem;
     }
 
     .cardtres-main{
