@@ -1,8 +1,12 @@
-//Cards pagina inicio//
-.cards-container {
-	margin-top: 1rem;
-	margin-block-end: 1rem;
+.carousel-container {
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
+
+
 
 //Espacio pagina Lanzamiento//
 .marginsuhi {
@@ -13,14 +17,50 @@
 	border: none;
 }  
 
+.cartas{
+	background-color: red;
+}
+
 .cards-container {
+	display: grid;
 	perspective: 1000px;
+	margin-bottom: 50px;
 }  
+
+@media (min-width: 1024px) {
+	.gap-y-md-8 {
+	  gap: 3rem 0rem; /* así cuando están en 1024 quedan 2 y 2 */
+	}
+}
+
+@media (min-width: 768px) {
+	.gap-y-md-8 {
+	  gap: 3rem 5rem; 
+	}
+}
+
+@media (min-width: 425px) {
+	.gap-y-md-8 {
+	  gap: 5rem 0rem; 
+	}
+}
+
+@media (min-width: 375px) {
+	.gap-y-md-8 {
+	  gap: 3rem 0rem; 
+	}
+}
+
+@media (min-width: 320px) {
+	.gap-y-md-8 {
+	  gap: 2rem 0rem; 
+	}
+}
+
 
 .card {
 	transition: transform 0.3s;
 	z-index: 1;
-
 	&:hover {
 	    transform: scale(1);
 	    z-index: 2;
@@ -31,8 +71,25 @@
 	z-index: 0;
 }
 
-
-.fondocard {
-	width: 15rem;
-	height: 24rem;
+.fondo-cartas-index{
+	background-color: aquamarine;
 }
+
+
+
+.image-main img:hover,
+.image-maindos img:hover,
+.image-maintres img:hover,
+.image-maincuatro img:hover {
+  animation: zoomIn 0.5s ease-in-out;
+}
+
+@keyframes zoomIn {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+

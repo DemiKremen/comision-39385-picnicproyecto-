@@ -3,6 +3,7 @@
 @import "base/typhography";
 
 @import "./utilities/mixins";
+@import "./utilities/variables";
 
 @import "components/button";
 @import "components/boostrap";
@@ -10,13 +11,14 @@
 @import "layouts/header";
 @import "layouts/main";
 @import "layouts/main-destacados";
-@import "layouts/main-destacados-media1024";
-@import "layouts/main-destacados-media768";
-@import "layouts/main-destacados-media425";
-@import "layouts/main-destacados-media320";
-@import "layouts/_main-nosotros";
+@import "layouts/main-nosotros";
 @import "layouts/footer";
 @import "./layouts/main-serv";
+
+@import "./layouts/mq-destacados/main-destacados-media1024";
+@import "./layouts/mq-destacados/main-destacados-media768";
+@import "./layouts/mq-destacados/main-destacados-media425";
+@import "./layouts/mq-destacados/main-destacados-media320";
 
 @import "layouts/main-lanzamientos";
 

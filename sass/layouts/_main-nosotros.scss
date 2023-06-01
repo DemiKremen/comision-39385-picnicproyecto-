@@ -33,9 +33,6 @@
     text-align: center;
 }
 
-.titulo-dest h1{
-    color: #3C2A21;
-}
 
 .image-verde{
     grid-area: verde;
@@ -53,7 +50,8 @@
 .frase-dest{
     display: grid;
     width: 100%;
-    background-color:#3C2A21;
+    outline: 2px solid #ffffff;    
+    border-radius: 0.5rem;
     grid-area: frase;
     padding: 2rem;
     justify-self: top;
@@ -74,6 +72,7 @@
 .image-destdos img{
     max-width: 100%;
     height: auto;
+    border-radius: 0.5rem;
 }
 
 .team-dest{
@@ -85,8 +84,9 @@
     text-align: left;   
     padding: 1rem;
 }
-.team-dest h1{
-    color: black;    
+.team-dest{   
+    outline: 2px solid #ffffff;    
+    border-radius: 0.5rem;
 }
 
 
