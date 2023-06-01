@@ -1,10 +1,10 @@
 @charset "UTF-8";
 header nav {
-  background-color: #e4e4e4;
+  background-color: #ffffff;
 }
 
 footer {
-  background-color: #e4e4e4;
+  background-color: #ffffff;
   margin-top: 1rem;
 }
 
@@ -20,16 +20,13 @@ main {
 
 @keyframes color-change-4x {
   0% {
-    background: #EC87E4;
+    background: #DACDF0;
   }
-  30% {
-    background: #51424F;
-  }
-  70% {
-    background: #51424F;
+  50% {
+    background: #9E7EE7;
   }
   100% {
-    background: #EC87E4;
+    background: #DACDF0;
   }
 }
 html {
@@ -69,7 +66,7 @@ h5 {
   color: rgb(0, 0, 0);
   font-size: 1rem;
   font-weight: bold;
-  text-shadow: rgb(5, 5, 5);
+  text-shadow: rgb(0, 0, 0);
   font-family: "Roboto", sans-serif;
 }
 
@@ -213,7 +210,7 @@ p {
 }
 
 button {
-  background-color: #e4e4e4;
+  background-color: #ffffff;
   border: none;
   color: rgb(255, 255, 255);
   padding: 12px 24px;
@@ -228,7 +225,7 @@ button {
   transition: background-color 0.3s ease;
 }
 button:hover {
-  background-color: #cbcbcb;
+  background-color: #e6e6e6;
   transition: background-color 0.3s ease, transform 0.2s ease;
   transform: scale(1.05);
 }
@@ -317,8 +314,13 @@ button:hover {
     transform: scale(1.1);
   }
 }
+.nico {
+  background-color: #AADDD0;
+  text-shadow: 1px 0px 1px rgb(0, 0, 0);
+}
+
 header nav {
-  background-color: #e4e4e4;
+  background-color: #ffffff;
 }
 
 .nav-item a:hover {
@@ -814,7 +816,7 @@ body {
   }
 }
 .fondo-footer {
-  background-color: #e4e4e4;
+  background-color: #ffffff;
 }
 
 .imgfoot {

@@ -1,6 +1,6 @@
 // _variables.scss
 
-$primary-color: #e4e4e4;  //fondo header y footer//
+$primary-color: #ffffff;  //fondo header y footer//
 $secondary-color: #e4e4e4;
 $font-size: 16px;
 
@@ -23,16 +23,13 @@ main {
 
 @keyframes color-change-4x {
 	0% {
-	    background: #EC87E4;
+	    background: #DACDF0;
 	}
-	30% {
-	    background: #51424F;
-	}
-	70% {
-	    background: #51424F;
+	50% {
+	    background: #9E7EE7;
 	}
 	100% {
-		background: #EC87E4;
+		background: #DACDF0;
 	}
 }
 
